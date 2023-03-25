@@ -6,8 +6,7 @@ const Join = (props) =>{
   const joinedWords = words.join(',');
   return(
     <div id ="join">
-    {joinedWords}
-      {/* Access prop 'words' and print it using .join like words.join(',')*/}
+      {joinedWords.replace(/hello|world|React/g, match => match[0])}
     </div>
   )
 }
